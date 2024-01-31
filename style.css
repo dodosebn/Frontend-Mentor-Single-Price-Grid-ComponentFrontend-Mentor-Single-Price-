@@ -1,0 +1,175 @@
+@import url("https://fonts.google.com/specimen/Karla");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color1:  hsl(179, 62%, 43%);
+    --primary-color2: hsl(71, 73%, 54%);
+    --neutral-color1: hsl(204, 43%, 93%);
+    --neutral-color2:hsl(218, 22%, 67%);
+}
+body{
+    background-color: var(--neutral-color1);
+}
+.container, .everything{
+ align-items: center;
+ justify-content: center;
+  display: flex;
+  font-family:"Karla", sans-serif ;
+}
+.everything{
+position: relative;
+}
+.first-part{
+    background-color: #fff;
+width: 34.2em;
+padding: 2.5em ;
+margin-top: 5em;
+border-radius: 7px;
+}
+.first-part h2{
+    color: var(--primary-color1);
+}
+.first-part h4{
+    color: var(--primary-color2);
+    padding-top: 1em;
+}
+.first-part p{
+    line-height: 1.6em;
+    padding-top: 1em;
+    color: var(--neutral-color2);
+    width: 33em;
+}
+.Entire-down{
+position: absolute;
+top: 12.5em;
+left: 0em;
+}
+.bottom-left{
+    background-color: var(--primary-color1);
+    width: 16.3em;
+padding: 2.01em ;
+margin-top: 5em;
+color: var(--neutral-color1);
+border-radius: 0  7px;
+}
+.bottom-left div{
+    /* word-spacing: 0.5em; */
+    position: relative;
+    padding-top: 1em;
+}
+.bottom-left h3, span, .bottom-right h3{
+    color: #fff;
+}
+.bottom-left  div .docx{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.bottom-left  div .txt{
+position: absolute;
+font-size: 0.9em;
+opacity: 0.7;
+bottom: 0.5em;
+padding-left: 0.7em;
+}
+.bottom-left p{
+    font-size: 0.9em;
+    padding-top: 0.5em;
+}
+.bottom-left p{
+    color: var(--neutral-color1);
+}
+.button-cont{
+    margin-top: 1em;
+}
+.btn{
+    background-color: var(--primary-color2);
+    border: none;
+    color: #fff;
+    width: 15.9em;
+    height: 3em;
+    border-radius: 5px;
+    font-weight: 700;
+}
+@-moz-document url-prefix(){
+    .bottom-right{
+        padding: 9em ;
+    }
+}
+.bottom-right{
+    background-color: #4abebd;
+    opacity: 1.5em;
+    width: 16em;
+    height: 11em;
+padding: 1.7em ;
+margin-left: 19.8em;
+position: absolute;
+bottom: -0.0001rem;
+border-radius: 0 0 7px;
+/* margin-top: 5em; */
+}
+.bottom-right .word{
+padding-top: 1.6em;
+color: var(--neutral-color1);
+line-height: 1.4em;
+font-size: 13.4px;
+
+}
+footer{
+    position: relative;
+    justify-content: center;
+     align-items: center;
+     display: flex;
+}
+.attribution { font-size: 11px;
+     text-align: center;
+     position: absolute;
+     top: 15em;
+     font-size: 17px;
+     }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 375px) {
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 58em;
+    }
+    /* .everything{
+        bottom: 10em;
+    } */
+    .first-part{
+    width: 16.5em;
+    padding: 1.5em ;
+    border-radius: 7px 7px 0 0;
+    }
+    .first-part p{
+        line-height: 1.6em;
+        padding-top: 1.2em;
+        width: 19em;
+        font-size: 14px;
+    }
+    .Entire-down{
+        position: absolute ;
+        top: 0;
+        left: 0;
+        }
+        .bottom-left{
+            position: inherit;
+        top: 14.7em;  
+        width: 15.5em;
+        border-radius:  0 0 0 0;
+        }
+        .bottom-right{
+            /* margin-top: 5em; */
+            position: inherit;
+            top: 34em;
+            right: -19.5em;
+            width: 16.1em;
+            border-radius:  0 0 7PX 7px;
+            }
+            .attribution {
+                top: 28em;
+            }
+}
