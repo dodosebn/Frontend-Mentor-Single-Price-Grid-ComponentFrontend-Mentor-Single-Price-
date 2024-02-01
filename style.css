@@ -130,15 +130,13 @@ footer{
      font-size: 17px;
      }
 .attribution a { color: hsl(228, 45%, 44%); }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     body{
         overflow-y: scroll;
         overflow-x: hidden;
         height: 58em;
     }
-    /* .everything{
-        bottom: 10em;
-    } */
+    
     .first-part{
     width: 16.5em;
     padding: 1.5em ;
